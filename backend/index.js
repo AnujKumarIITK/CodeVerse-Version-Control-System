@@ -21,7 +21,9 @@ const { revertRepo } = require("./controllers/revert");
 
 dotenv.config();
 
-yargs(hideBin(process.argv))
+if (require.main === module) {
+
+  yargs(hideBin(process.argv))
   .command("start", "Starts a new server", {}, startServer)
   .command("init", "Initialise a new repository", {}, initRepo)
   .command(
@@ -67,14 +69,15 @@ yargs(hideBin(process.argv))
   )
   .demandCommand(1, "You need at least one command")
   .help().argv;
+  
+}
 
-
-
+  
 function startServer() {
 
   const app = express();
   const port = process.env.PORT || 3000;
-
+  
   app.use(bodyParser.json());
   app.use(express.json());
 
@@ -123,7 +126,9 @@ function startServer() {
 
 }
 
-
+module.exports = {
+  startServer,
+};
 
 
 
