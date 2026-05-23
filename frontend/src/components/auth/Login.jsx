@@ -22,7 +22,7 @@ const Login = () => {
     try {
 
       setLoading(true);
-      const res = await axios.post("http://localhost:3002/login", {
+      const res = await axios.post("100.31.237.183:3002/login", {
         email: email,
         password: password,
       });
