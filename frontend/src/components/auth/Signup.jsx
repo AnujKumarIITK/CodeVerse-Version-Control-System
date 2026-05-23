@@ -111,7 +111,7 @@ const Signup = () => {
 
         <div className="pass-box">
           <p>
-            Already have an account? <Link to="https://codeverse-version-control-system-backend.onrender.com/auth">Login</Link>
+            Already have an account? <Link to="/auth">Login</Link>
           </p>
         </div>
       </div>

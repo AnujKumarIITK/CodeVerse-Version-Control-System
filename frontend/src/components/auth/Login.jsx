@@ -95,7 +95,7 @@ const Login = () => {
         </div>
         <div className="pass-box">
           <p>
-            New to CodeVerse? <Link to="https://codeverse-version-control-system-backend.onrender.com/signup">Create an account</Link>
+            New to CodeVerse? <Link to="/signup">Create an account</Link>
           </p>
         </div>
       </div>
