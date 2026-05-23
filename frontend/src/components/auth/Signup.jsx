@@ -8,8 +8,10 @@ import "./auth.css";
 
 import logo from "../../assets/github-mark-white.svg";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -34,7 +36,7 @@ const Signup = () => {
       setCurrentUser(res.data.userId);
       setLoading(false);
 
-      window.location.href = "/";
+      navigate("/");
     } catch (err) {
       console.error(err);
       alert("Signup Failed!");
@@ -120,5 +122,8 @@ const Signup = () => {
 };
 
 export default Signup;
+
+
+
 
 

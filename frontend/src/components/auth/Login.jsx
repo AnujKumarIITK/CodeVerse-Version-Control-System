@@ -8,9 +8,10 @@ import "./auth.css";
 
 import logo from "../../assets/github-mark-white.svg";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -33,7 +34,7 @@ const Login = () => {
       setCurrentUser(res.data.userId);
       setLoading(false);
 
-      window.location.href = "/";
+      navigate("/");
 
     } catch (err) {
       console.error(err);
@@ -104,6 +105,5 @@ const Login = () => {
 };
 
 export default Login;
-
 
 

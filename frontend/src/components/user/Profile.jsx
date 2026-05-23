@@ -5,6 +5,7 @@ import Navbar from "../Navbar";
 import { BookIcon, RepoIcon } from "@primer/octicons-react";
 import HeatMapProfile from "./HeatMap";
 import { useAuth } from "../../authContext";
+import { useNavigate } from "react-router-dom";
 
 const styles = {
   pageRoot: {
@@ -426,7 +427,7 @@ const Profile = () => {
             localStorage.removeItem("token");
             localStorage.removeItem("userId");
             setCurrentUser(null);
-            window.location.href = "/auth";
+            navigate("/auth");
           }}
         >
           Logout
@@ -437,7 +438,6 @@ const Profile = () => {
 };
 
 export default Profile;
-
 
 
 
