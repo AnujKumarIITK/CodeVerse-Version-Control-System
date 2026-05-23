@@ -133,7 +133,7 @@ The project includes simulation of important version-control commands.
 ## 1. Initialize Repository
 
 ```bash
-init
+node index.js init
 ```
 
 Creates a repository structure and prepares the project for version control tracking.
@@ -393,10 +393,6 @@ Interested in:
 
 - Full Stack Development
 - Software Engineering
-- System Design
-- Version Control Systems
-- Distributed Systems
-- Quantum Computing
 
 ---
 
@@ -412,7 +408,7 @@ This project serves as an excellent learning resource for understanding full-sta
 
 ### ⭐ If you found this project useful, consider giving it a star.
 
-### 🚀 Happy Coding with CodeVerse!
-
 </div>
+
+
 
