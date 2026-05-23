@@ -37,8 +37,6 @@ CodeVerse provides an ecosystem where users can:
 - Manage commits
 - Push and pull changes
 - Revert repository states
-- Create and manage issues
-- Maintain developer profiles
 - Track contribution history
 - Monitor repository statistics
 
@@ -123,7 +121,6 @@ MongoDB stores:
 
 - Frontend Deployment
 - Backend Deployment
-- Environment Configuration
 
 ---
 
@@ -146,7 +143,7 @@ Creates a repository structure and prepares the project for version control trac
 ## 2. Add File
 
 ```bash
-add file.txt
+node index.js add file.txt
 ```
 
 Stages files before commit.
@@ -156,7 +153,7 @@ Stages files before commit.
 ## 3. Commit Changes
 
 ```bash
-commit "message"
+node index.js commit "message"
 ```
 
 Creates a snapshot of the current repository state.
@@ -166,7 +163,7 @@ Creates a snapshot of the current repository state.
 ## 4. Push Changes
 
 ```bash
-push
+node index.js push
 ```
 
 Uploads repository changes to the remote system.
@@ -176,7 +173,7 @@ Uploads repository changes to the remote system.
 ## 5. Pull Changes
 
 ```bash
-pull
+node index.js pull
 ```
 
 Fetches latest repository updates.
@@ -186,7 +183,7 @@ Fetches latest repository updates.
 ## 6. Revert Changes
 
 ```bash
-revert
+node index.js revert
 ```
 
 Restores repository to a previous state.
@@ -246,15 +243,6 @@ Restores repository to a previous state.
 
 ---
 
-## 🐛 Issue Management
-
-- Create Issue
-- View Issues
-- Manage Issues
-- Track Repository Problems
-
----
-
 # 🚀 Core Functionalities
 
 ## Repository Creation
@@ -306,57 +294,6 @@ Tracks:
 - Commits
 - Issue Activities
 - User Contributions
-
----
-
-# 🔧 Backend Functionalities
-
-## User Controller
-
-Handles:
-
-- Signup
-- Login
-- Profile Retrieval
-- Profile Update
-- Profile Deletion
-
----
-
-## Repository Controller
-
-Handles:
-
-- Repository Creation
-- Repository Retrieval
-- Repository Update
-- Repository Deletion
-
----
-
-## Issue Controller
-
-Handles:
-
-- Issue Creation
-- Issue Retrieval
-- Issue Update
-- Issue Deletion
-
----
-
-## Version Control Logic
-
-Implements:
-
-```text
-initRepo()
-addFile()
-commitChanges()
-pushChanges()
-pullChanges()
-revertChanges()
-```
 
 ---
 
@@ -427,41 +364,6 @@ Features:
 - Protected Routes
 - Environment Variables
 - Secure API Communication
-
----
-
-# 📊 Learning Outcomes
-
-This project demonstrates:
-
-- Full Stack Development
-- MERN Architecture
-- REST API Development
-- Authentication Systems
-- MongoDB Data Modeling
-- Repository Management
-- Version Control Concepts
-- Frontend State Management
-- Backend Business Logic
-- Deployment Strategies
-
----
-
-# 🚀 Future Enhancements
-
-Potential improvements include:
-
-- Real Git Integration
-- Branch Management
-- Merge Operations
-- Pull Requests
-- Repository Forking
-- Team Collaboration
-- Notifications
-- Real-Time Updates
-- Code Diff Viewer
-- Repository Analytics
-- CI/CD Integration
 
 ---
 
