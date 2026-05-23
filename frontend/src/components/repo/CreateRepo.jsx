@@ -36,7 +36,7 @@ const CreateRepo = () => {
       
       console.log("Sending data to backend...", repoData);
 
-      const response = await fetch('100.31.237.183:3002/repo/create', {
+      const response = await fetch('http://100.31.237.183:3002/repo/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
