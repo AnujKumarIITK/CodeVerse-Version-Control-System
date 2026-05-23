@@ -16,7 +16,7 @@ const Dashboard = () => {
     const fetchRepositories = async () => {
       try {
         const response = await fetch(
-          `http://100.31.237.183:3002/repo/user/${userId}`
+          `https://codeverse-version-control-system-backend.onrender.com/repo/user/${userId}`
         );
         const data = await response.json();
         setRepositories(data.repositories || []);
@@ -27,7 +27,7 @@ const Dashboard = () => {
 
     const fetchSuggestedRepositories = async () => {
       try {
-        const response = await fetch("http://100.31.237.183:3002/repo/all");
+        const response = await fetch("https://codeverse-version-control-system-backend.onrender.com/repo/all");
         const data = await response.json();
         setSuggestedRepositories(data || []);
       } catch (err) {

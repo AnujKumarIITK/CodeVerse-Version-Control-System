@@ -22,7 +22,7 @@ const Signup = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://100.31.237.183:3002/signup", {
+      const res = await axios.post("https://codeverse-version-control-system-backend.onrender.com/signup", {
         email: email,
         password: password,
         username: username,
