@@ -426,7 +426,7 @@ const Profile = () => {
             localStorage.removeItem("token");
             localStorage.removeItem("userId");
             setCurrentUser(null);
-            window.location.href = "https://codeverse-version-control-system-backend.onrender.com/auth";
+            window.location.href = "/auth";
           }}
         >
           Logout
