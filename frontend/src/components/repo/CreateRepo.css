@@ -1,0 +1,259 @@
+.create-repo-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 16px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.02),
+    0 20px 40px rgba(0,0,0,0.45);
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif;
+}
+
+.create-repo-header {
+  margin-bottom: 24px;
+}
+
+.create-repo-header h2 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #f0f6fc;
+  margin-bottom: 10px;
+}
+
+.create-repo-header p {
+  color: #8b949e;
+  font-size: 15px;
+}
+
+.divider {
+  height: 1px;
+  border: none;
+  background: #21262d;
+  margin: 28px 0;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f0f6fc;
+  margin-bottom: 8px;
+}
+
+.required {
+  color: #f85149;
+  margin-left: 4px;
+}
+
+.optional {
+  color: #8b949e;
+  font-weight: 400;
+  margin-left: 6px;
+}
+
+.github-input,
+.github-select {
+  width: 100%;
+  background: #010409;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #e6edf3;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.github-input:hover,
+.github-select:hover {
+  border-color: #58a6ff;
+}
+
+.github-input:focus,
+.github-select:focus {
+  outline: none;
+  border-color: #2f81f7;
+  box-shadow: 0 0 0 4px rgba(47, 129, 247, 0.25);
+}
+
+.github-select {
+  background: #161b22;
+}
+
+.owner-name-group {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.owner-section,
+.name-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.slash {
+  font-size: 28px;
+  color: #8b949e;
+  margin-bottom: 8px;
+}
+
+.description-input {
+  width: 100%;
+}
+
+.visibility-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.visibility-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.visibility-card:hover {
+  border-color: #58a6ff;
+  background: #161b22;
+  transform: translateY(-2px);
+}
+
+.visibility-card input[type="radio"] {
+  margin-top: 0;
+  transform: scale(1.2);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.radio-content {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.radio-icon {
+  font-size: 24px;
+  color: #58a6ff;
+  margin-top: 0;
+  flex-shrink: 0;
+}
+
+.radio-text strong {
+  display: block;
+  font-size: 18px;
+  color: #f0f6fc;
+  margin-bottom: 6px;
+}
+
+.radio-text p {
+  margin: 0;
+  color: #8b949e;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-top: 5px;
+  transform: scale(1.2);
+}
+
+.checkbox-text strong {
+  display: block;
+  font-size: 17px;
+  color: #f0f6fc;
+  margin-bottom: 4px;
+}
+
+.checkbox-text p {
+  margin: 0;
+  color: #8b949e;
+  line-height: 1.6;
+}
+
+.form-actions {
+  margin-top: 32px;
+}
+
+.btn-create {
+  background: linear-gradient(
+    180deg,
+    #2ea043,
+    #238636
+  );
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 18px rgba(35, 134, 54, 0.35);
+}
+
+.btn-create:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: linear-gradient(
+    180deg,
+    #3fb950,
+    #2ea043
+  );
+}
+
+.btn-create:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn-create:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .create-repo-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .owner-name-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .slash {
+    display: none;
+  }
+
+  .create-repo-header h2 {
+    font-size: 28px;
+  }
+}
+
+
+
+
